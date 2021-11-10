@@ -34,10 +34,10 @@ if (isset($_GET['controller']) && isset($_GET['action'])) {
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" href="http://158.108.207.4/db21/db21_080/">Home</a>
-        <a class="nav-link" href="?controller=fieldHospital&action=index">fieldHospital</a>
-        <a class="nav-link" href="?controller=FHPD&action=index">fieldHospitalPatientDetail</a>
-        <a class="nav-link" href="?controller=patientIn&action=index">PatientIn</a>
-        <a class="nav-link" href="?controller=recordPatientIn&action=index">recordPatientIn</a>
+        <a class="nav-link active" href="?controller=fieldHospital&action=index">fieldHospital</a>
+        <a class="nav-link active" href="?controller=FHPD&action=index">fieldHospitalPatientDetail</a>
+        <a class="nav-link active" href="?controller=patientIn&action=index">PatientIn</a>
+        <a class="nav-link active" href="?controller=recordPatientIn&action=index">recordPatientIn</a>
       </div>
     </div>
   </div>
