@@ -22,10 +22,10 @@ if (isset($_GET['controller']) && isset($_GET['action'])) {
   
 </head>
 
-<body style="background-color:#4169E1;">
+<body style="background-color:#F5FFFA;">
   <?php echo "controller = " . $controller . ",action = " . $action; ?>
   <br>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4169E1;">
   <div class="container-fluid">
     <a class="navbar-brand" href="?controller=pages&action=home">โรงพยาบาลสนาม</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
