@@ -6,13 +6,13 @@
 <br>ชาญวิชญ์ จำปา 6220504640 <br>
 <br><br>new Record <a href=?controller=recordPatientIn&action=newRecordPatientIn>: click</a><br><br>
 
-<form method="get"action="" >
-    <input type="text" name="key">
-    <input type="hidden" name="controller" value="recordPatientIn"/>
-    <button type="submit" name="action" value="search">
-Search</button>
-</form>
-
+<div class="container-fluid">
+    <form class="d-flex">
+      <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search" name="key">
+      <input type="hidden" name="controller" value="recordPatientIn"/>
+      <button class="btn btn-outline-success" type="submit" name="action" value="search">Search</button>
+    </form>
+  </div>
 
 <?php 
        

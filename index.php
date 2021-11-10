@@ -22,21 +22,32 @@ if (isset($_GET['controller']) && isset($_GET['action'])) {
   
 </head>
 
-<body>
+<body style="background-color:#4169E1;">
   <?php echo "controller = " . $controller . ",action = " . $action; ?>
   <br>
-  [<a href="?controller=pages&action=home">Home(หน้าหลัก) </a>]
-  [<a href="?controller=fieldHospital&action=index">fieldHospital </a>]
-  [<a href="?controller=FHPD&action=index">fieldHospitalPatientDetail </a>]
-  [<a href="?controller=patientIn&action=index">PatientIn </a>]
-  [<a href="?controller=recordPatientIn&action=index">recordPatientIn </a>]
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="?controller=pages&action=home">โรงพยาบาลสนาม</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="http://158.108.207.4/db21/db21_080/">Home</a>
+        <a class="nav-link" href="?controller=fieldHospital&action=index">fieldHospital</a>
+        <a class="nav-link" href="?controller=FHPD&action=index">fieldHospitalPatientDetail</a>
+        <a class="nav-link" href="?controller=patientIn&action=index">PatientIn</a>
+        <a class="nav-link" href="?controller=recordPatientIn&action=index">recordPatientIn</a>
+      </div>
+    </div>
+  </div>
+</nav>
   <br>
-  
   <?php require_once("routes.php"); ?>
 
 
-  <br><br><br><br><br><br><br><br><br><br><br><br><br>
-  .<a style="color:white" href="?controller=map&action=index">ทดลอง</a>
+  
+  
 </body>
 
 
